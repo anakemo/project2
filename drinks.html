@@ -19,8 +19,6 @@
         </div>
 
         </div>
-        
-
         <div class="logHidden" id="logHidden">
             <form action="">
                 <input type="text" name="" id="" placeholder="enter your name or email address" >
@@ -46,51 +44,48 @@
         </div>
         
     </header>
+
+
+
     <main>
+
         
+        <div class="cocktailsWraper" id="cocktailsWraper">
 
-
-        <div class="registrationwraper">
-            <form action="" method="POST" class="forma" id="forma">
-                <input type="text" name="name" id="name" class="name">
-                <span class="error-text" id="error_name"> </span>
-
-                <input type="text" name="surname" id="surname" class="surname">
-                <span class="error-text" id="error_surname"> </span>
-
-                <input type="tel" name="my_phone" id="phone" class="phone">
-                <span class="error-text" id="error_phone"></span>
-
-                <input type="email" name="my_email" id="email" class="email">
-                <span class="error-text" id="error_email"></span>
-
-                <label for="gender1" class="lebelg1">male</label>
-                <input type="radio" name="my_gender" id="gender" class="gender1">
-                
-
-                <label for="gender2" class="lebelg2">female</label>
-                <input type="radio" name="my_gender" id="gender" class="gender2">
-                <span class="error-text" id="error_gender"></span>
-
-                <label for="terms" class="labelcheck">i agree terms and conditions</label>
-                <input type="checkbox" name="my_terms" id="terms" class="terms">
-                
-                <span class="error-text" id="error_terms"></span>
-
-                <input type="password" name="my_password" id="password1" class="passs1">
-                <input type="password" name="my_password" id="password2" class="passs2">
-                <i class="fa-solid fa-eye" id="fa-eye"></i> <br>
-                <span class="error-text" id="error_password1"></span>
-                <span class="error-text" id="error_password2"></span>
-                <span class="error-text" id="error_password"></span>
-                <button type="submit">sign up </button>
+        </div>
+        
+        
+        
+        <div class="overlay" id="overlay">
+            <div class="content" id="content"></div>
+            <div class="close" id="close"> X </div>
+        </div>
+        
+        
+        <div class="add-drink" id="add">
+        +
+        </div>
+        <div class="overlay-add" id="overlay-add">
+            <form action="" id="forma">
+                <label for="title">drink title </label>
+                <input type="text" name="title" id="drinktitle" class="drinktitle">
+                <label for="description">drink description</label>
+                <textarea name="" id="description" class="description" cols="30" rows="10"></textarea>
+                <button type="submit" class="sub" id="sub">add drink</button>
             </form>
-
         </div>
 
 
+
+
         <button onclick="topFunction()" id="myBtn" class="myBtn"  title="Go to top"><i class="fa-solid fa-chevron-up"></i></button>
+        
     </main>
+
+
+
+
+
     <footer>
         <div class="foot">
             <div class="socmedia">
@@ -108,19 +103,21 @@
                 <i class="fa-regular fa-copyright"></i>
                 <p>All rights reserved</p>
             </div>
-            <!-- <div class="termsandconditions">
+            <div class="termsandconditions">
                 <a href=""><p><b>terms and conditions</b></p></a>
                 <p>contact us <i class="fa-solid fa-phone"></i> 555 555 555   </p>
                 <address><p>4 Freedom Square, Tbilisi 0105</p></address>
                 <map name="mapp" class="mapp"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2979.2586340916546!2d44.79932251537277!3d41.69335207923725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40440cee4ce65829%3A0x8d33d69b9c5a4b1e!2sCourtyard%20by%20Marriott%20Tbilisi!5e0!3m2!1sen!2sge!4v1668614218520!5m2!1sen!2sge" width="300" height="100" style="border: 2px solid white;"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></map>
 
-            </div> -->
+            </div>
             
 
 
         </div>
     </footer>
-    <script src="scripts/carreers.js"></script>
+    <script src="scripts/drinks.js"></script>
+    <script src="scripts/slider.js"></script>
     <script src="scripts/scripts.js"></script>
+    
 </body>
 </html>

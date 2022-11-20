@@ -55,6 +55,8 @@ closeLogBox.addEventListener("click",function(){
 let enLop=document.getElementById("fa-envelope");
 let textHidBox=document.getElementById("textushidden");
 let closeTextBox=document.getElementById("fa-xmarkTex");
+let userName1=document.getElementById("logHiddenemail");
+let userPass1=document.getElementById("logHiddenpass");
 
 enLop.addEventListener("click",function(){
     textHidBox.style.cursor=("pointer");
@@ -70,4 +72,23 @@ closeTextBox.addEventListener("click",function(){
 })
 
 
+
+let mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+} 
   

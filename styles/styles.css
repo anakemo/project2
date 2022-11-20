@@ -13,7 +13,7 @@
 
 .navigation{
     width: 100%;
-    height: 100px;
+    /* height: 100px; */
     background-color:rgba(59, 50, 50, 0.944);
     
     /* position: fixed;
@@ -91,6 +91,14 @@ a{
     display: none;
     z-index: 3;
 }
+.fa-user:hover{
+    cursor: pointer;
+    box-shadow: 15px 15px 15px;
+}
+.fa-envelope:hover{
+    cursor: pointer;
+    box-shadow: 15px 15px 15px;
+}
 .fa-xmark{
     position: absolute;
     top: 20px;
@@ -142,14 +150,14 @@ a{
 
 .forma{
     
-    width: 50%;
+    /* width: 50%;
     padding: 6%;
     background-color: rgba(176, 119, 65, 0.644);
     border-radius: 5%;
     color: black;
     /* font-weight: 800; */
     font-size: 18px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
     
     
 
@@ -244,7 +252,7 @@ font-size: 30px;
    
 }
 .articletext{
-    height: 300px;
+    height: 25%;
     width: 30%;
     display: block;
     font-size: 20px;
@@ -265,33 +273,33 @@ input{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     
 }
-.span{
+/* .span{
     display: block;
-}
-.textArea{
+} */
+/* .textArea{
     resize: none;
     width: 100%;
     
     display: block;
-}
-.gender{
+} */
+/* .gender{
     display: flex;
     flex-wrap: nowrap;
-}
-.male{
+} */
+/* .male{
     float: left;
 }
 .female{
     float: left;
-}
-.conditions{
+} */
+/* .conditions{
     width: 20px;
     color: black;
     text-decoration: none;
 }
 .agree{
     width: 10px;
-}
+} */
 
 .drinkwithus{
     width: 70%;
@@ -337,6 +345,29 @@ input{
     
 }
 
+
+.myBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 34px;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 4px;
+    display: block;
+    z-index: 3;
+  }
+  
+  .myBtn:hover {
+    background-color: rgb(162, 104, 77);
+  }
 
 
 
@@ -513,3 +544,263 @@ footer{
 .aboutusArticle3img{
     background-image: url(../image/martini.jpg);
 }
+
+
+
+/* drinks.html */
+.cocktailsWraper{
+    width: 100%;
+    /* background-color: azure; */
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.cocktails {
+    width: 25%;
+    
+    padding: 2px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    border-radius: 5%;
+    color: white;
+    border: none;
+    border-bottom: 1px solid black;
+
+}
+.cocktails:hover{
+    box-shadow: 5px 5px 5px;
+    cursor: pointer;
+}
+.newdrinkwraper{
+    width: 50%;
+    margin: 5px;
+    /* height: auto; */
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: aquamarine;
+}
+.cocktailsimage{
+    width: 90%;
+    border-radius: 5%;
+    margin: 2px;
+    box-shadow: 5px 5px 5px;
+}
+.h2cocktails {
+    display: block;
+    /* height: 20px; */
+    width: auto;
+    margin: 2px;
+    
+}
+.h3cocktails{
+    display: block;
+    /* height: 20px; */
+    width: auto;
+    margin: 2px;
+}
+.instructionscocktails{
+height: 20px;
+margin: 5px;
+}
+
+.overlay{
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 50%;
+   height: 50%;
+   background-color:  rgb(153, 112, 79);
+   border-style:double;
+   box-shadow: 15px 15px 15px;
+   border-radius: 5%;
+   padding: 10px;
+   font-weight: 600;
+   display: none;
+   margin: 50px auto;
+}
+.overlay.activeOverlay{
+    display: block;
+    
+}
+
+.close {
+    position: absolute;
+    top:20px;
+    right: 20px;
+    /* display: none; */
+    color:black;
+    cursor: pointer;
+    font-size: 40px;
+    
+}
+.content{
+    margin: 5px;
+    padding: 20px;
+    color: rgb(84, 69, 99);
+    font-size: 24px;
+   text-transform: capitalize;
+   font-style: italic;
+}
+
+.delbut{
+    background-color:  rgb(153, 112, 79);
+    width: fit-content;
+    padding: 3px;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-shadow: 15px 15px 15px;
+    width: 100px;
+    height: 40px;
+    
+    display: block;
+   
+    cursor: pointer;
+    margin: 5px;
+}
+.delbut:hover{
+     background-color: rgb(120, 83, 69);
+     box-shadow: 25px 25px 25px;
+     cursor: pointer;
+     
+     
+
+}
+
+.add-drink:hover{
+    background-color: rgb(120, 83, 69);
+    
+    cursor: pointer;
+
+}
+
+.add-drink{
+    width: 30px;
+    height: 30px;
+    background-color:  rgb(153, 112, 79);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border-radius: 50%;
+    font-size: 32px;
+    color: white;
+    /* box-shadow: 10px 10px 10px; */
+    z-index: 4;
+}
+
+
+
+.overlay-add{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-color:  rgb(153, 112, 79);
+    border-style:double;
+    /* border: 5px solid white; */
+    border-radius: 5%;
+    padding: 10px;
+    font-weight: 600;
+    display: none;
+    margin: 50px auto;
+    box-shadow: 20px 20px 20px;
+}
+.overlay-add.active-add{
+    display: block;
+}
+.drinktitle,.description{
+    width: 100%;
+
+}
+.sub{
+    background-color:  rgb(153, 112, 79);
+    border: none;
+    border: 1px solid white;
+    box-shadow: 15px 15px 15px;
+}
+
+
+
+@media only screen and (max-width: 395px) {
+    body {
+     background-size: 100%;
+     
+     
+    }
+
+    .navigation{
+        display: list-item;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0);
+        
+
+
+    }
+    .logo{
+        display: none;
+    }
+    .navUl{
+        display: list-item;
+        background-color: brown;
+    }
+   .logArea{
+   font-size: 34px;
+   /* top: 5px; */
+   position: fixed;
+   top: 0px;
+   left: 25%;
+   /* left: 50%; */
+   width: 25%;
+   
+   background-color: aliceblue;
+   }
+   .articles{
+    width: 100%;
+    display: list-item;
+   }
+   .homeArtcile{
+    width: 100%;
+   }
+
+   .articleimagewrap{
+    width: 50%;
+   }
+  }
+
+
+
+
+
+
+  .registrationwraper{
+    width: 70%;
+   
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(105, 63, 26, 0.9);
+    
+  }
+  .forma{
+    font-size: 14px;
+    
+    
+  }
+ .forma input{
+    height: 20px;
+    background-color: aquamarine;
+    cursor:auto;
+ }
+
+ .forma input:hover{
+    height: 22px;
+ }
+ .error-text{
+    display: block;
+    color: red;
+ }
+
