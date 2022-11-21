@@ -5,8 +5,8 @@
 let nav=document.getElementById("navigation");
 function cerateNav(){
     
-    let navNames=["home", "drinks","carrer","about us " ,];
-    let navLinks=['index.html', 'drinks.html','carrer.html','aboutus.html'];
+    let navNames=["home", "drinks","sign up","about us " ,];
+    let navLinks=['index.html', 'drinks.html','signup.html','aboutus.html'];
     console.log(navNames);
 
     let ul=document.createElement("ul");
